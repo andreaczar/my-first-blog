@@ -3,9 +3,16 @@ name: PR
 on: push
 
 jobs:
-  build:
+  create-pr:
     runs-on: ubuntu-latest
 
     steps:
     - name: auto-create-pr-action
       uses: smartinspereira/auto-create-pr-action@v0.1.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH_PREFIX: ""
+        # BASE_BRANCH = ""
+        # PULL_REQUEST_TITLE = ""
+        # PULL_REQUEST_BODY = ""
+        PULL_REQUEST_DRAFT: "true"
