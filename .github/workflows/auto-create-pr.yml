@@ -18,8 +18,8 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH_PREFIX: "test/"
         BASE_BRANCH: "master"
-        PULL_REQUEST_TITLE: "${{ GITHUB_BASE_REF }} -> Master"
-        # PULL_REQUEST_BODY = ""
+#        PULL_REQUEST_TITLE: ""
+#        PULL_REQUEST_BODY: ""
         PULL_REQUEST_DRAFT: "true"
 
     - name: auto-create-pr-action_staging
@@ -28,6 +28,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH_PREFIX: "test/"
         BASE_BRANCH: "staging"
-        PULL_REQUEST_TITLE: "Into Stagings"
+#        PULL_REQUEST_TITLE: "Into Stagings"
         # PULL_REQUEST_BODY = ""
         PULL_REQUEST_DRAFT: "true"
