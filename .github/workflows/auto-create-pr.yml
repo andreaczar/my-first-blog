@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: auto-create-pr-action
+    - name: auto-create-pr-action_staging
       uses: smartinspereira/auto-create-pr-action@v0.1.0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -17,7 +17,7 @@ jobs:
         # PULL_REQUEST_BODY = ""
         PULL_REQUEST_DRAFT: "true"
 
-    - name: auto-create-pr-action
+    - name: auto-create-pr-action_master
       uses: smartinspereira/auto-create-pr-action@v0.1.0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
