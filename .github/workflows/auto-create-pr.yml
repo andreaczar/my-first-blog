@@ -18,7 +18,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH_PREFIX: "test/"
         BASE_BRANCH: "master"
-        PULL_REQUEST_TITLE: "${{ HEAD_BRANCH }} -> Master"
+        PULL_REQUEST_TITLE: "${{ GITHUB_BASE_REF }} -> Master"
         # PULL_REQUEST_BODY = ""
         PULL_REQUEST_DRAFT: "true"
 
