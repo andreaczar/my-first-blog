@@ -5,7 +5,7 @@ on:
     branches:
     - release/*
     - hotfix/*
-    - test/*
+#    - test/*
 
 jobs:
   create-pr:
