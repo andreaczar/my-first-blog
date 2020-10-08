@@ -5,7 +5,7 @@ on:
     branches:
     - release/*
     - hotfix/*
-#    - test/*
+    - test/*
 
 jobs:
   create-pr:
@@ -18,7 +18,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH_PREFIX: "test/"
         BASE_BRANCH: "master"
-        PULL_REQUEST_TITLE: "Into Master"
+        PULL_REQUEST_TITLE: "${{ github.base_ref }} -> Master"
         # PULL_REQUEST_BODY = ""
         PULL_REQUEST_DRAFT: "true"
 
