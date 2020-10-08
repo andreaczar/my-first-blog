@@ -11,7 +11,7 @@ jobs:
       uses: smartinspereira/auto-create-pr-action@v0.1.0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH_PREFIX: ""
+        BRANCH_PREFIX: "test/"
         # BASE_BRANCH = ""
         # PULL_REQUEST_TITLE = ""
         # PULL_REQUEST_BODY = ""
