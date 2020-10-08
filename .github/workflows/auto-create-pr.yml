@@ -11,7 +11,7 @@ jobs:
       uses: smartinspereira/auto-create-pr-action@v0.1.0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH_PREFIX: "test/"
+        BRANCH_PREFIX: "te/"
         BASE_BRANCH: "staging"
         PULL_REQUEST_TITLE: "Into Staging"
         # PULL_REQUEST_BODY = ""
@@ -21,7 +21,7 @@ jobs:
       uses: smartinspereira/auto-create-pr-action@v0.1.0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH_PREFIX: "test/"
+        BRANCH_PREFIX: "te/"
         BASE_BRANCH: "master"
         PULL_REQUEST_TITLE: "Into Master"
         # PULL_REQUEST_BODY = ""
