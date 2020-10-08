@@ -28,6 +28,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH_PREFIX: "test/"
         BASE_BRANCH: "staging"
-        PULL_REQUEST_TITLE: "Into Staging"
+        PULL_REQUEST_TITLE: "Into Stagings"
         # PULL_REQUEST_BODY = ""
         PULL_REQUEST_DRAFT: "true"
