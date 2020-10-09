@@ -1,4 +1,4 @@
-name: PR
+name: Auto-create Pull Request
 
 on:
   push:
@@ -20,7 +20,7 @@ jobs:
         BASE_BRANCH: "master"
 #        PULL_REQUEST_TITLE: ""
 #        PULL_REQUEST_BODY: ""
-#        PULL_REQUEST_DRAFT: "true"
+        PULL_REQUEST_DRAFT: "false"
 
     - name: auto-create-pr-action_staging
       uses: smartinspereira/auto-create-pr-action@v0.1.0
@@ -30,4 +30,4 @@ jobs:
         BASE_BRANCH: "staging"
 #        PULL_REQUEST_TITLE: "Into Stagings"
         # PULL_REQUEST_BODY = ""
-#        PULL_REQUEST_DRAFT: "true"
+        PULL_REQUEST_DRAFT: "false"
