@@ -21,11 +21,6 @@ jobs:
 #        PULL_REQUEST_TITLE: ""
 #        PULL_REQUEST_BODY: ""
 
-
-  create-pr-2:
-    runs-on: ubuntu-latest
-
-    steps:
     - name: auto-create-pr-action_staging
       uses: Certn/auto-create-pr-action@master
       env:
