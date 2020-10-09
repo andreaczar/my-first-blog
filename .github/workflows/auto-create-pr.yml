@@ -1,4 +1,4 @@
-name: Auto-Create Pull Request
+name: Auto-Create Release Pull Request
 
 on:
   push:
@@ -12,20 +12,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: auto-create-pr-action_master
+    - name: master
       uses: Certn/auto-create-pr-action@master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH_PREFIX: "test/"
         BASE_BRANCH: "master"
-#        PULL_REQUEST_TITLE: ""
-#        PULL_REQUEST_BODY: ""
 
-    - name: auto-create-pr-action_staging
+    - name: staging
       uses: Certn/auto-create-pr-action@master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH_PREFIX: "test/"
         BASE_BRANCH: "staging"
-#        PULL_REQUEST_TITLE: ""
-        # PULL_REQUEST_BODY = ""
