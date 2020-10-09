@@ -20,7 +20,7 @@ jobs:
         BASE_BRANCH: "master"
 #        PULL_REQUEST_TITLE: ""
 #        PULL_REQUEST_BODY: ""
-        PULL_REQUEST_DRAFT: "false"
+#        PULL_REQUEST_DRAFT: "false"
 
   create-pr-2:
     runs-on: ubuntu-latest
@@ -34,4 +34,4 @@ jobs:
         BASE_BRANCH: "staging"
 #        PULL_REQUEST_TITLE: "Into Stagings"
         # PULL_REQUEST_BODY = ""
-        PULL_REQUEST_DRAFT: "false"
+#        PULL_REQUEST_DRAFT: "false"
