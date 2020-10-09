@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - name: auto-create-pr-action_master
-      uses: smartinspereira/auto-create-pr-action@v0.1.0
+      uses: Certn/auto-create-pr-action@master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH_PREFIX: "test/"
@@ -27,7 +27,7 @@ jobs:
 
     steps:
     - name: auto-create-pr-action_staging
-      uses: smartinspereira/auto-create-pr-action@v0.1.0
+      uses: Certn/auto-create-pr-action@master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH_PREFIX: "test/"
